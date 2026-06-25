@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analista de Carruseles</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>🎠 Analista de Carruseles</h1>
+    <p class="sub">Pega la URL de un carrusel de Instagram y obtén el blueprint para replicarlo.</p>
+  </header>
+
+  <section class="analyzer">
+    <div class="input-row">
+      <input id="url" type="text" placeholder="https://www.instagram.com/p/XXXXXXXXX/" />
+      <button id="go">Analizar</button>
+    </div>
+    <div id="status" class="status hidden"></div>
+  </section>
+
+  <nav class="tabs">
+    <button class="tab active" data-tab="carruseles">Carruseles analizados</button>
+    <button class="tab" data-tab="estructuras">Estructuras ganadoras</button>
+  </nav>
+
+  <main>
+    <section id="tab-carruseles" class="tab-panel"></section>
+    <section id="tab-estructuras" class="tab-panel hidden"></section>
+  </main>
+
+  <!-- Modal de detalle -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-bg"></div>
+    <div class="modal-card">
+      <button id="modal-close" class="modal-close">✕</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

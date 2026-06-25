@@ -1,0 +1,14 @@
+{
+  "name": "analista-de-carruseles",
+  "version": "1.0.0",
+  "description": "Analista local de carruseles de Instagram: extrae con Apify, analiza con Gemini (OpenRouter) y construye una galeria de estructuras ganadoras.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
